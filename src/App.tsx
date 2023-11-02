@@ -1,12 +1,15 @@
 import React,{useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import './components/inputbar'
+import Inputbar from "./components/Inputbar";
+
 
 const App: React.FC = () => {
-    return(
+    const [email, setEmail] = useState<String>("")
+    return (
         <div className="App">
-            Hello World
+            <div className="Header"> Mailverteiler </div>
+            <Inputbar />
         </div>
     );
 };
