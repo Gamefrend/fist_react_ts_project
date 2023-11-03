@@ -6,11 +6,13 @@ import Inputbar from "./components/Inputbar";
 
 const App: React.FC = () => {
     const [email, setEmail] = useState<String>("")
+
     return (
 
         <div className="App">
             <div className="Header"> Mailverteiler</div>
-            <Inputbar/>
+            <Inputbar email={email} setEmail={setEmail}/>
+
         </div>
     );
 };
